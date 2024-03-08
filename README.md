@@ -1,35 +1,35 @@
-NODE.JS APPLICATION
+NODE.JS APPLICATION :
 
 This is a Node.js application that provides various functionalities such as user authentication, posting, following users, and viewing a social feed.
 
 
 
-Setup Instructions
+Setup Instructions :
 Follow these steps to set up and run the application on your local machine:
 
 
 
-Prerequisites
+Prerequisites :
 Node.js and npm installed on your machine
 MongoDB Atlas account for database storage
 
 
 
-Installation
+Installation :
 Clone the repository to your local machine
 
 
-Navigate to the project directory:
+Navigate to the project directory :
 cd SocialApp
 
 
-Install dependencies using npm:
+Install dependencies using npm :
 npm install
 
 
-Run App:
+Run App :
 npm run server
 
 
-API Documentation
+API Documentation :
 You can find the documentation for the application's API endpoints in the API.md file.
