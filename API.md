@@ -8,13 +8,13 @@ Authentication
 
 1. Sign Up
 
-URL: /auth/signup
+URL :- /auth/signup
 
-Method: POST
+Method :- POST
 
-Description: Register a new user.
+Description :- Register a new user.
 
-Request Body:
+Request Body :-
 
 username (string, required): The username of the user.
 
@@ -26,7 +26,7 @@ bio (string): Optional bio of the user.
 
 profilePictureUrl (string): Optional URL to the profile picture of the user.
 
-Response:
+Response :-
 
 message: Success message.
 
@@ -35,19 +35,19 @@ token: JWT token for the newly registered user.
 
 2. Login
 
-URL: /auth/login
+URL :- /auth/login
 
-Method: POST
+Method :- POST
 
-Description: Log in an existing user.
+Description :- Log in an existing user.
 
-Request Body:
+Request Body :-
 
 email (string, required): The email address of the user.
 
 password (string, required): The password of the user.
 
-Response:
+Response :-
 
 token: JWT token for the logged-in user.
 
@@ -57,15 +57,15 @@ Profile
 
 1. View Profile
 
-URL: /profile
+URL :- /profile
 
-Method: GET
+Method :- GET
 
-Description: Get the profile of the authenticated user.
+Description :- Get the profile of the authenticated user.
 
-Headers : Authorization (string, required): JWT token of the authenticated user.
+Headers :- Authorization (string, required): JWT token of the authenticated user.
 
-Response :
+Response :-
 
 username: Username of the user.
 
@@ -77,15 +77,15 @@ profilePictureUrl: URL to the profile picture of the user.
 
 2. Update Profile
 
-URL : /profile
+URL :- /profile
 
-Method : PUT
+Method :- PUT
 
-Description : Update the profile of the authenticated user.
+Description :- Update the profile of the authenticated user.
 
-Headers : Authorization (string, required): JWT token of the authenticated user.
+Headers :- Authorization (string, required): JWT token of the authenticated user.
 
-Request Body (Optional) :
+Request Body (Optional) :-
 
 username (string): New username of the user.
 
@@ -93,19 +93,19 @@ bio (string): New bio of the user.
 
 profilePictureUrl (string): New URL to the profile picture of the user.
 
-Response : Updated profile information.
+Response :- Updated profile information.
 
 3. Delete Profile
 
-URL: /profile
+URL :- /profile
 
-Method: DELETE
+Method :- DELETE
 
-Description: Delete the profile of the authenticated user.
+Description :- Delete the profile of the authenticated user.
 
-Headers : Authorization (string, required): JWT token of the authenticated user.
+Headers :- Authorization (string, required): JWT token of the authenticated user.
 
-Response : Success message indicating the profile deletion.
+Response :- Success message indicating the profile deletion.
 
 ---------------------------------------
 
@@ -113,59 +113,59 @@ Posts
 
 1. Create Post
 
-URL: /posts
+URL :- /posts
 
-Method: POST
+Method :- POST
 
-Description: Create a new post.
+Description :- Create a new post.
 
-Headers : Authorization (string, required): JWT token of the authenticated user.
+Headers :- Authorization (string, required): JWT token of the authenticated user.
 
-Request Body : content (string, required): Content of the post.
+Request Body :- content (string, required): Content of the post.
 
-Response : Newly created post object.
+Response :- Newly created post object.
 
 2. Read Own Posts
 
-URL: /posts/myposts
+URL :- /posts/myposts
 
-Method: GET
+Method :- GET
 
-Description: Get the posts created by the authenticated user.
+Description :- Get the posts created by the authenticated user.
 
-Headers : Authorization (string, required): JWT token of the authenticated user.
+Headers :- Authorization (string, required): JWT token of the authenticated user.
 
-Response : List of posts created by the user.
+Response :- List of posts created by the user.
 
 3. Update Post
 
-URL: /posts/:postId
+URL :- /posts/:postId
 
-Method: PUT
+Method :- PUT
 
-Description: Update a post created by the authenticated user.
+Description :- Update a post created by the authenticated user.
 
-Headers: Authorization (string, required): JWT token of the authenticated user.
+Headers :- Authorization (string, required): JWT token of the authenticated user.
 
-Request Parameters: postId (string, required): ID of the post to be updated.
+Request Parameters :- postId (string, required): ID of the post to be updated.
 
-Request Body: content (string, required): New content of the post.
+Request Body :- content (string, required): New content of the post.
 
-Response: Updated post object.
+Response :- Updated post object.
 
 4. Delete Post
 
-URL: /posts/:postId
+URL :- /posts/:postId
 
-Method: DELETE
+Method :- DELETE
 
-Description: Delete a post created by the authenticated user.
+Description :- Delete a post created by the authenticated user.
 
-Headers: Authorization (string, required): JWT token of the authenticated user.
+Headers :- Authorization (string, required): JWT token of the authenticated user.
 
-Request Parameters: postId (string, required): ID of the post to be deleted.
+Request Parameters :- postId (string, required): ID of the post to be deleted.
 
-Response: Success message indicating the post deletion.
+Response :- Success message indicating the post deletion.
 
 ---------------------------------------
 
@@ -173,55 +173,55 @@ Following
 
 1. Follow User
 
-URL: /follow
+URL :- /follow
 
-Method: POST
+Method :- POST
 
-Description: Follow a user.
+Description :- Follow a user.
 
-Headers: Authorization (string, required): JWT token of the authenticated user.
+Headers :- Authorization (string, required): JWT token of the authenticated user.
 
-Request Body: followedUserId (string, required): ID of the user to follow.
+Request Body :- followedUserId (string, required): ID of the user to follow.
 
-Response: Success message indicating the user followed successfully.
+Response :- Success message indicating the user followed successfully.
 
 2. Unfollow User
 
-URL: /follow/unfollow
+URL :- /follow/unfollow
 
-Method: POST
+Method :- POST
 
-Description: Unfollow a user.
+Description :- Unfollow a user.
 
-Headers: Authorization (string, required): JWT token of the authenticated user.
+Headers :- Authorization (string, required): JWT token of the authenticated user.
 
-Request Body: followedUserId (string, required): ID of the user to unfollow.
+Request Body :- followedUserId (string, required): ID of the user to unfollow.
 
-Response: Success message indicating the user unfollowed successfully.
+Response :- Success message indicating the user unfollowed successfully.
 
 3. Get Followings
 
-URL: /follow/followings
+URL :- /follow/followings
 
-Method: GET
+Method :- GET
 
-Description: Get the list of users followed by the authenticated user.
+Description :- Get the list of users followed by the authenticated user.
 
-Headers: Authorization (string, required): JWT token of the authenticated user.
+Headers :- Authorization (string, required): JWT token of the authenticated user.
 
-Response: List of user IDs followed by the user.
+Response :- List of user IDs followed by the user.
 
 4. Get Followers
 
-URL: /follow/followers
+URL :- /follow/followers
 
-Method: GET
+Method :- GET
 
-Description: Get the list of users following the authenticated user.
+Description :- Get the list of users following the authenticated user.
 
-Headers: Authorization (string, required): JWT token of the authenticated user.
+Headers :- Authorization (string, required): JWT token of the authenticated user.
 
-Response: List of user IDs following the user.
+Response :- List of user IDs following the user.
 
 ---------------------------------------
 
@@ -229,12 +229,12 @@ Social Feed
 
 1. Get Social Feed
 
-URL: /social-feed/feed
+URL :- /social-feed/feed
 
-Method: GET
+Method :- GET
 
-Description: Get the social feed containing posts from followed users.
+Description :- Get the social feed containing posts from followed users.
 
-Headers: Authorization (string, required): JWT token of the authenticated user.
+Headers :- Authorization (string, required): JWT token of the authenticated user.
 
-Response: Social feed containing posts from followed users.
+Response :- Social feed containing posts from followed users.
