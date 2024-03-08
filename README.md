@@ -21,7 +21,7 @@ git clone https://github.com/vishalmishra-27/SocialApp
 
 
 Navigate to the project directory:
-cd your_repository
+cd SocialApp
 
 
 Install dependencies using npm:
