@@ -27,5 +27,9 @@ Install dependencies using npm:
 npm install
 
 
+Run App:
+npm run server
+
+
 API Documentation
 You can find the documentation for the application's API endpoints in the API.md file.
