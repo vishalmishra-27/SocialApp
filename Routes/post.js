@@ -142,7 +142,6 @@ router.delete('/:postId', authMiddleware, async (req, res) => {
             return res.status(404).json({ error: 'Post not found' });
         }
         
-        
         // Check if user owns the post
         if (post.user.toString() !== req.user.userId) {
             return res.status(403).json({ error: 'You are not authorized to delete this post' });

@@ -1,4 +1,3 @@
-// follow.js
 const mongoose = require('mongoose');
 
 const followSchema = new mongoose.Schema({

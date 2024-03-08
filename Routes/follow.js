@@ -107,6 +107,7 @@ router.get('/followings', authMiddleware, async (req, res) => {
 
 
 
+
 // Get Followers endpoint
 
 // Request Format :-
