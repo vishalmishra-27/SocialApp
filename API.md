@@ -14,9 +14,7 @@ Method: POST
 
 Description: Register a new user.
 
-Request Body:
-
-username (string, required): The username of the user.
+Request Body: username (string, required): The username of the user.
 
 email (string, required): The email address of the user.
 
@@ -26,22 +24,24 @@ bio (string): Optional bio of the user.
 
 profilePictureUrl (string): Optional URL to the profile picture of the user.
 
-Response:
-
-message: Success message.
+Response: message: Success message.
 
 token: JWT token for the newly registered user.
 
 
 2. Login
+
 URL: /auth/login
+
 Method: POST
+
 Description: Log in an existing user.
-Request Body:
-email (string, required): The email address of the user.
+
+Request Body: email (string, required): The email address of the user.
+
 password (string, required): The password of the user.
-Response:
-token: JWT token for the logged-in user.
+
+Response: token: JWT token for the logged-in user.
 
 ---------------------------------------
 
