@@ -17,7 +17,7 @@ MongoDB Atlas account for database storage
 
 Installation
 Clone the repository to your local machine:
-git clone https://github.com/your_username/your_repository.git
+git clone https://github.com/vishalmishra-27/SocialApp
 
 
 Navigate to the project directory:
