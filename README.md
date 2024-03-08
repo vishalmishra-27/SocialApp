@@ -13,8 +13,6 @@ Prerequisites :
 Node.js and npm installed on your machine & 
 MongoDB Atlas account for database storage
 
----------------------------------------
-
 Installation :
 
 Clone the repository to your local machine
