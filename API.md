@@ -9,18 +9,31 @@ http://localhost:2000/api
 Authentication
 
 Sign Up
+
 URL: /auth/signup
+
 Method: POST
+
 Description: Register a new user.
+
 Request Body:
+
 username (string, required): The username of the user.
+
 email (string, required): The email address of the user.
+
 password (string, required): The password of the user.
+
 bio (string): Optional bio of the user.
+
 profilePictureUrl (string): Optional URL to the profile picture of the user.
+
 Response:
+
 message: Success message.
+
 token: JWT token for the newly registered user.
+
 
 Login
 URL: /auth/login
@@ -31,7 +44,6 @@ email (string, required): The email address of the user.
 password (string, required): The password of the user.
 Response:
 token: JWT token for the logged-in user.
-
 
 ---------------------------------------
 
