@@ -20,6 +20,10 @@ app.use('/api/posts', require('./Routes/post'));
 app.use('/api/follow', require('./Routes/follow'));
 app.use('/api/social-feed', require('./Routes/socialFeed'));
 
+app.get('/', (req, res) => {
+    res.send('Node JS Assignment 3');
+})
+
 // Start the server
 const PORT = 2000;
 app.listen(PORT, () => {
