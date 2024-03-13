@@ -21,7 +21,7 @@ app.use('/api/follow', require('./Routes/follow'));
 app.use('/api/social-feed', require('./Routes/socialFeed'));
 
 app.get('/', (req, res) => {
-    res.send('Node JS Assignment 3');
+    res.send(`<h1>Hi, this is the backend server for Node JS Assignment 3.<br><br>  GitHub link - <a href="https://github.com/vishalmishra-27/SocialApp" target="_blank">https://github.com/vishalmishra-27/SocialApp</a></h1>`);
 })
 
 // Start the server

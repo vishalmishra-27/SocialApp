@@ -2,6 +2,8 @@ NODE.JS APPLICATION :
 
 This is a Node.js application that provides various functionalities such as user authentication, posting, following users, and viewing a social feed.
 
+This Node.JS Backend Server is hosted at 'https://socialapp-cuo2.onrender.com'
+
 ---------------------------------------
 
 Setup Instructions :

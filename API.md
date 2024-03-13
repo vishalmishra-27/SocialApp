@@ -1,6 +1,10 @@
 API Documentation
 
-Base URL : The base URL for all API endpoints is -> http://localhost:2000/api
+Base URL :-
+
+1. The base URL for all API endpoints from hosted server is -> https://socialapp-cuo2.onrender.com/api
+
+2. The base URL for all API endpoints from local system is -> http://localhost:2000/api
 
 ---------------------------------------
 
